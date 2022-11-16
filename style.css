@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(186, 226, 228);
+}
+#bar{
+    display: none;
+}
+.left-logo{
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    font-size: xx-large;
+    letter-spacing: -10px;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.right-bar{
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    display: flex;
+    margin-right: 5%;
+}
+
+.right-bar i{
+    display: none;
+}
+
+img{
+    height: 70%;
+    width: 100%;
+}
+
+header button{
+    border: none;
+    background-color: transparent;
+    margin-right: 6%;
+    font-family:cursive;
+    color: white;
+    font-size: 22px;
+    cursor:pointer;
+}
+
+section{
+    display: flex;
+    margin-top: -1%;
+}
+
+.HTML{
+    width: 25%;
+    text-align: center;
+    padding: 5% 0% 5% 0%;
+    background-color: rgb(228, 66, 115);
+}
+
+.CSS{
+    width: 25%;
+    text-align: center;
+    padding: 5% 0% 5% 0%;
+    background-color: aqua;
+}
+
+.SEO{
+    width: 25%;
+    text-align: center;
+    padding: 5% 0% 5% 0%;
+    background-color: rgb(112, 214, 180);
+}
+
+
+.SOCIAL{
+    width: 25%;
+    text-align: center;
+    padding: 5% 0% 5% 0%;
+    background-color: silver;
+}
+
+main{
+    width: 100%;
+    height: 150%;
+    background-color: rgb(186, 226, 228);
+    display: flex;
+}
+
+.left-content{
+    width: 50%;
+    
+}
+
+.Tab{
+    height: 40%;
+    width:100%;
+}
+
+.text-content{
+    background-color: rgba(172, 128, 34, 0.863);
+    text-align: justify;
+}
+
+.text-content h2{
+    text-align: center;
+    padding: 2.5% 0% 2.5% 0%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-content p{
+    font-size: x-large;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+    padding: 2%;
+}
+
+.Desktop{
+    height: 36%;
+}
+
+.right-content{
+    width: 50%;
+}
+
+
+.text-content2{
+    background-color:silver;
+    height: 33%;
+}
+
+.text-content2 h2{
+    text-align: center;
+    padding: 2.5% 0% 2.5% 0%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-content2 p{
+    font-size: x-large;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+    padding: 2%;
+}
+
+.text-content3{
+    background-color:rgb(238, 51, 51);
+    height: 20%;
+}
+
+.text-content3 h2{
+    text-align: center;
+    padding: 2.5% 0% 2.5% 0%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-content3 p{
+    font-size: x-large;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+.Mobile{
+    height: 43%
+}
+
+
+.article{
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+
+}
+
+.Google{
+    width: 33.33%;
+    background-color: silver;
+    text-align: justify;
+}
+
+.Marketing{
+    width: 33.34%;
+    background-color: rgb(229, 145, 85);
+    text-align: justify;
+}
+
+.Customers{
+    width: 33.33%;
+    background-color: rgb(83, 248, 193);
+    text-align: justify;
+}
+
+.article h2{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.article p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:large;
+    padding: 2%;
+}
+
+
+
+.footer{
+    display: flex;
+    background-color: rgb(21, 95, 243);
+    height: 5%;
+    justify-content: space-around;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.footer i{
+    font-size: xx-large;
+}
+
+@media only screen and (max-width:1200px){
+    .right-bar{
+        position: absolute;
+        right: 10%;
+    }
+    .left-content{
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 'Tab'
+                             'text1'
+                             'Desktop';
+    }
+
+    .Tab{
+        grid : Tab;
+        height: 100%;
+    }
+    .text-content{
+        grid: text1;
+        height: 100%;
+    }
+    .Desktop{
+        grid: Desktop;
+        height: 100%;
+        
+    }
+
+    .right-content{
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 'text2'
+                             'Mobile'
+                             'text3';
+    }
+
+    .text-content2{
+        grid: text2;
+        height: 100%;
+    }
+    .Mobile{
+        grid: Mobile;
+        height: 90%;
+    }
+    .text-content3{
+        grid: text3;
+        height: 100%;
+    }
+
+}
+
+@media only screen and (max-width:600px){
+    .right-bar{
+        display: none;
+    }
+    #bar{
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 2%;
+        cursor: pointer;
+    }
+    section{
+        display: block;
+    }
+    .HTML{
+        width: 100%;
+    }
+    .CSS{
+        width: 100%;
+    }
+    .SEO{
+        width: 100%;
+    }
+    .SOCIAL{
+        width: 100%;
+    }
+    main{
+        display: block;
+        height: auto;
+    }
+    .right-content{
+        width: 100%;
+    }
+    .left-content{
+        width: 100%;
+    }
+    .article{
+        display: block;
+    }
+    .Google{
+        width: 100%;
+    }
+    .Marketing{
+        width: 100%;
+    }
+    .Customers{
+        width: 100%;
+    }
+    
+}
